@@ -37,6 +37,11 @@ public class PaymentController {
         }
     }
 
+    @GetMapping("/lb")
+    public String getPaymentLB(){
+        return serverPort;
+    }
+
     @GetMapping("/get/{id}")
     public CommonResult getPaymentById(@PathVariable("id") Long id, Payment payment){
         Payment paymentById = paymentService.getPaymentById(id);
@@ -45,6 +50,8 @@ public class PaymentController {
         }else {
             return new CommonResult(444,"查询失败",null);
         }
+
+
     }
 
 }

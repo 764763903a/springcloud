@@ -14,6 +14,7 @@ import org.springframework.web.bind.annotation.*;
 import javax.annotation.Resource;
 import javax.xml.transform.Result;
 import java.util.List;
+import java.util.concurrent.TimeUnit;
 
 /**
  * @program: com.zjy.springcloud
@@ -66,6 +67,17 @@ public class PaymentController {
             log.info(instance.getHost()+instance.getPort());
         }
         return this.discoveryClient;
+    }
+
+    @GetMapping("/lb")
+    public String getPaymentLB(){
+        return serverPort;
+    }
+
+    @GetMapping("/feign/timeout")
+    public String paymentFeignTimeout() throws InterruptedException {
+        TimeUnit.SECONDS.sleep(3);
+        return serverPort;
     }
 
 }

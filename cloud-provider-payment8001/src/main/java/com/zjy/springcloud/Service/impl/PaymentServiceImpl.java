@@ -24,6 +24,7 @@ public class PaymentServiceImpl implements PaymentService {
         return paymentMapper.creat(payment);
     }
 
+    @Override
     public Payment getPaymentById(Long id){
         return paymentMapper.getPaymentById(id);
     }

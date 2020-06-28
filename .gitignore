@@ -1,0 +1,31 @@
+# Created by .ignore support plugin (hsz.mobi)
+### Example user template template
+### Example user template
+
+# IntelliJ project files
+.idea
+*.iml
+out
+gen
+.gitignore
+cloud-api-commons/src/main/resources/
+cloud-api-commons/src/test/
+cloud-api-commons/target/generated-sources/
+cloud-consumer-order80/src/test/
+cloud-consumer-order80/target/classes/com/zjy/springcloud/lb/
+cloud-consumer-order80/target/generated-sources/
+cloud-euerka-server7001/src/test/
+cloud-euerka-server7001/target/generated-sources/
+cloud-euerka-server7002/src/test/
+cloud-euerka-server7002/target/generated-sources/
+cloud-provider-payment8001/src/test/
+cloud-provider-payment8001/target/generated-sources/
+cloud-provider-payment8002/src/test/
+cloud-provider-payment8002/target/generated-sources/
+cloud-consumer-feign-order80/src/test/
+cloud-consumer-feign-order80/target/
+cloud-provider-hystrix-payment8001/src/
+cloud-consumer-feign-hystrix-order80/src/
+cloud-provider-hystrix-payment8001/target/
+cloud-consumer-feign-hystrix-order80/target/
+http-client.env.json
